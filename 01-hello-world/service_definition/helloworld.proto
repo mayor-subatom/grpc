@@ -1,0 +1,20 @@
+syntax = "proto3" ; // specifies using proto3 syntax coz default is proto2
+
+/**
+ * SERVICE DEFINITION ( service methods, payload messages...)
+ */
+package helloworld;
+
+//server
+service Greeter {
+    //A simple RPC : the client sends a request (via stub) and waits for a response to come back
+    rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+    string name = 1; //username
+}
+
+message HelloReply {
+    string message = 1;
+}

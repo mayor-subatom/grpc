@@ -12,3 +12,12 @@
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
+.idea/
+bin/
+pkg/
+src/google.golang.org/genproto
+src/google.golang.org/grpc
+src/golang.org/x/net
+src/golang.org/x/text
+src/github.com/golang/protobuf
+
